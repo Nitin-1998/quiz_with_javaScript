@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #001e4d;
+}
+
+.app{
+    width: 90%;
+    max-width: 600px;
+    min-height: auto;
+    background: #fff;
+    /* align-items: center; */
+    margin: 100px auto 0;
+    padding: 20px 20px;
+    border-radius: 10px;
+    /* display: block; */
+
+}
+
+.app h1{
+    padding: 20px 10px;
+    border-bottom: 1px solid black;
+}
+
+.quiz h3{
+    padding: 20px 10px;
+}
+
+#answer-btn .btn{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    border: 1px solid #222;
+    border-radius: 5px;
+    color: #222;
+}
+
+
+.quiz #next-btn{
+    font-size: 15px;
+    display: flex;
+    margin: 10px auto 10px;
+    padding: 10px;
+    width: 150px;
+    justify-content: center;
+    background: #001e4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+/* to stop the hover effect after selecting an answer */
+#answer-btn .btn:hover:not([disabled]){
+    background-color: black;
+    color: #fff;
+}
+
+/* to display donot select cursor after selecting an answer */
+.btn:disabled{
+    cursor: no-drop;
+}
+
+/* classes from javascript for correct and incorrect answers */
+.correct{
+    background-color: #9aeabc;
+}
+
+.incorrect{
+    background-color: #ff9393;
+}
+
+/* to atop the hover effect adfter selecting an answer */
